@@ -24,12 +24,13 @@
 
 
 
-        <main class="">
+
 
             @include('admin.partials.navbar')
-            @yield('content');
+            @include('admin.partials.aside')
+            @yield('content')
 
-        </main>
+
 
     </div>
 </body>
