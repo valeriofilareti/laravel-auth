@@ -32,3 +32,15 @@ aside {
 
     }
 }
+
+
+.index-main {
+    width: calc(100% - 180px);
+    height: calc(100vh - 80px);
+    overflow: auto;
+    padding: 15px;
+    button {
+        display: inline-block;
+    }
+}
+
