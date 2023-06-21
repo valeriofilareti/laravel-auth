@@ -14,7 +14,13 @@
         <!-- Scripts -->
         @vite(['resources/scss/appGuest.scss', 'resources/js/appGuest.js'])
     </head>
+
+
     <body class="font-sans text-gray-900 antialiased">
+
+
+        @include('guest.partials.navbar')
         @yield('content')
+
     </body>
 </html>
