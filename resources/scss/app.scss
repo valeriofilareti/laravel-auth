@@ -18,10 +18,17 @@ aside {
     height: calc(100vh - 70px);
     background-color: black;
     float: left;
-    li {
-        list-style: none;
-        a {
-            text-decoration: none;
+    ul{
+        padding-top: 10px;
+        li {
+            list-style: none;
+            a {
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
         }
+
     }
 }
