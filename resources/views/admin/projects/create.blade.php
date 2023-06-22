@@ -33,6 +33,19 @@
                 <li class="list-group-item"><input id="description" type="text" class="form-control" name="description"></li>
                 <li class="vf-item">date</li>
                 <li class="list-group-item"><input id="creation_date" name="creation_date" class="form-control" type="text"></li>
+                <li class="vf-item">category</li>
+                <li class="list-group-item">
+                    <select class="form-label p-2" name="" id="">
+                        <option value="">Select Category</option>
+                        @foreach ($categories as $category)
+                        <option value="">{{$category->name}}</option>
+                        @endforeach
+
+
+
+
+                    </select>
+                </li>
             </ul>
         </div>
     </form>
