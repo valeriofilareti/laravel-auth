@@ -7,7 +7,8 @@
     <div class="title">
         <h1>show</h1>
         <div class="btn">
-            <button type="button" class="btn btn-secondary"><i class="fa-solid fa-pen"></i></button>
+            <button type="button" class="btn btn-secondary"><a href="{{route('admin.projects.edit', $project)}}"><i class="fa-solid fa-pen"></a></i></button>
+            <button type="button" class="btn btn-primary"><a href="{{route('admin.projects.index')}}"><i class="fa-solid fa-list"></i></a></i></button>
         </div>
     </div>
 

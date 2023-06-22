@@ -27,7 +27,7 @@
                     <td>
                         <div class="btn d-flex">
                             <button type="button" class="btn btn-primary"><a href="{{route('admin.projects.show', $project)}}"><i class="fa-solid fa-eye"></i></a></button>
-                            <button type="button" class="btn btn-secondary"><i class="fa-solid fa-pen"></i></button>
+                            <button type="button" class="btn btn-secondary"><a href="{{route('admin.projects.edit', $project)}}"><i class="fa-solid fa-pen"></i></a></button>
                             <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
                         </div>
                     </td>

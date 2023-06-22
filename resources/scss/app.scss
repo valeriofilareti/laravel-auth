@@ -4,6 +4,9 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+a {
+    color: white
+}
 .btn {
     float: right;
 }
@@ -58,6 +61,9 @@ aside {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+    button {
+        margin: 2px;
     }
 }
 
