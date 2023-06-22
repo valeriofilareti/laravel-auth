@@ -12,7 +12,7 @@ class Project extends Model
     protected $fillable = [
         'name',
         'description',
-        'date'
+        'creation_date'
     ];
 
     public function category() {

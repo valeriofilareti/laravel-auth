@@ -1,15 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
-
 <div class="vf-main">
 
-    <form action="{{ route('admin.projects.update', $project) }}" method="POST">
+    <form action="{{route('admin.projects.store')}}" method="POST" enctype="multipart/form-data">
 
         @csrf
-        @method('PUT')
+
         <div class="title">
-            <h1>edit</h1>
+            <h1>create</h1>
             <div class="btn">
                 <button type="submit" class="btn btn-success">
                     <a href=""><i class="fa-solid fa-check"></i></i></a>
@@ -26,14 +25,14 @@
 
                     <li class="vf-item">name</li>
                     <li class="list-group-item">
-                        <input value="{{old('name', $project->name)}}" name="name" type="text" class="form-control @error('title') is-invalid @enderror"  placeholder="Enter Title">
+                        <input name="name" type="text" class="form-control @error('name') is-invalid @enderror"  placeholder="Enter Name">
                     </li>
 
 
                 <li class="vf-item">description</li>
-                <li class="list-group-item"><input class="form-control" value="{{old('description', $project->description)}}" name="description"></li>
+                <li class="list-group-item"><input id="description" type="text" class="form-control" name="description"></li>
                 <li class="vf-item">date</li>
-                <li class="list-group-item"><input value="{{old('creation_date', $project->creation_date)}}"  class="form-control" type="text"></li>
+                <li class="list-group-item"><input id="creation_date" name="creation_date" class="form-control" type="text"></li>
             </ul>
         </div>
     </form>

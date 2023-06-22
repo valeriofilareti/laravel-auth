@@ -2,8 +2,11 @@
 @section('content')
 
 <main class="index-main float-end">
-    <div class="title">
-        <h2>Elenco progetti</h2>
+    <div class="title d-flex justify-content-between">
+        <h1>Elenco progetti</h1>
+        <div class="btn">
+            <button type="button" class="btn btn-primary"><a href="{{route('admin.projects.create')}}"><i class="fa-solid fa-plus"></i></i></a></i></button>
+        </div>
     </div>
 
     <table class="table table-hover w-100">
