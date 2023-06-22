@@ -2,6 +2,9 @@
 @section('content')
 
 <main class="index-main float-end">
+    <div class="title">
+        <h2>Elenco progetti</h2>
+    </div>
 
     <table class="table table-hover w-100">
         <thead>
@@ -23,9 +26,9 @@
                     <td>{{$project->creation_date}}</td>
                     <td>
                         <div class="btn d-flex">
-                            <button type="button" class="btn btn-primary">x</button>
-                            <button type="button" class="btn btn-secondary">x</button>
-                            <button type="button" class="btn btn-danger">x</button>
+                            <button type="button" class="btn btn-primary"><a href="{{route('admin.projects.show', $project)}}"><i class="fa-solid fa-eye"></i></a></button>
+                            <button type="button" class="btn btn-secondary"><i class="fa-solid fa-pen"></i></button>
+                            <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
                         </div>
                     </td>
                 </tr>
