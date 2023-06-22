@@ -28,7 +28,11 @@
                         <div class="btn d-flex">
                             <button type="button" class="btn btn-primary"><a href="{{route('admin.projects.show', $project)}}"><i class="fa-solid fa-eye"></i></a></button>
                             <button type="button" class="btn btn-secondary"><a href="{{route('admin.projects.edit', $project)}}"><i class="fa-solid fa-pen"></i></a></button>
-                            <button type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                            <form action="{{route('admin.projects.destroy', $project)}}" method="POST" onsubmit="return confirm('confermi?')">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                            </form>
                         </div>
                     </td>
                 </tr>
